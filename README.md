@@ -37,7 +37,7 @@ int main (int argc, char *argv[])
   /* Pops a, so that e == &a->elem. */
   struct heap_elem *e = heap_pop (&h, NULL);
   
-  /* Obtains the adress of the enclosing int_wrapper from e, so that p == &e. */
+  /* Obtains the adress of the enclosing int_wrapper from e, so that p == &a. */
   struct int_wrapper *p = heap_entry (e, struct int_wrapper, elem);
   
   return 0;
